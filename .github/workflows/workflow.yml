@@ -45,7 +45,7 @@ jobs:
       with:
         app-name: ${{ env.LOGIC_APP_NAME }}
         package: 'logicapp.zip'
-        publish-profile: ${{steps.laapp.outputs.profile}}      
+#        publish-profile: ${{steps.laapp.outputs.profile}}      
     
         
      
