@@ -21,8 +21,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r logicapp.zip dir
+      with:
+        args: zip -qq -r logicapp.zip dir
     - uses: azure/login@v1
       with:
         client-id: ${{ secrets.AZURE_CLIENT_ID }}
