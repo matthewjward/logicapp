@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: montudor/action-zip@v1
       with:
-        args: zip -qq -r logicapp.zip .
+        args: zip -qq -r logicapp.zip helloworld Artifacts connections.json host.json
     - uses: azure/login@v1
       with:
         client-id: ${{ secrets.AZURE_CLIENT_ID }}
